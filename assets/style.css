@@ -1,5 +1,96 @@
+html {
+    font-size: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #21a9a9ff 0%, #3745ae 50%, #a52ed9ff 96%, #c628e6 100%);
+    background: -webkit-linear-gradient(90deg, #21a9a9ff 0%, #3745ae 50%, #a52ed9ff 96%, #c628e6 100%);
+    background: -moz-linear-gradient(90deg, #21a9a9ff 0%, #3745ae 50%, #a52ed9ff 96%, #c628e6 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.fl-r, .fl-c {
+    display: flex;
+}
+
+.fl-r {
+    flex-direction: row;
+}
+
+.fl-c {
+    flex-direction: column;
+}
+
+.container {
+    border-radius: 2.5rem;
+    padding: 2rem;
+    max-width: 30%;
+    min-width: 30%;
+    margin: 10rem auto;
+    background-color: rgb(46, 64, 83);
+    min-height: 70vh;
+}
+
+.display {
+    width: 100%;
+    margin: 1.5rem auto;
+    background-color: azure;
+    min-height: 5rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    align-items: end;
+    justify-content: center;
+}
+
+.display p {
+    font-size: large;
+}
+
+.row {
+    width: 100%;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-weight: 900;
+}
+
+.number, .op {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    aspect-ratio: 1 / 1; 
+    background-color: rgb(221, 221, 221);
+    border-radius: 0.5rem;
+    margin: 0.2rem auto;
+}
+
+.wide {
+    width: 74%;
+    height: 10rem;
+    background-color: rgb(221, 221, 221);
+    border-radius: 0.5rem;
+    margin: 0.2rem auto;
+}
+
+.op {
+    background-color: #811b02;
+    color: #fff;
+}
+
+.sign, #dot {
+    background-color: #d19e52;
+}
+
+.equal {
+    background-color: #d6850c;
 }
